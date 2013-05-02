@@ -1,0 +1,47 @@
+"===============================================================================
+" Pathogen
+"===============================================================================
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+call pathogen#helptags()
+
+"===============================================================================
+" Key Mapping
+"===============================================================================
+" FuzzyFinder
+nmap ,f :FufFileWithCurrentBufferDir<CR>
+nmap ,b :FufBuffer<CR>
+nmap ,t :FufTaggedFile<CR>
+" MRU
+nmap ,m :MRU<CR>
+
+"===============================================================================
+" Setting
+"===============================================================================
+set smartindent
+set tabstop=4
+set shiftwidth=4
+" set expandtab
+set number
+set cursorline
+set autoread
+set showmatch
+set laststatus=2
+set tags=tags;/
+
+"===============================================================================
+" Color
+"===============================================================================
+colorscheme desert
+syntax on
+
+"===============================================================================
+" Other
+"===============================================================================
+" netRW: Open files in a split window
+let g:netrw_browse_split = 1
+
+" NERDTree config
+let NERDTreeShowHidden=1
+
+autocmd VimEnter * NERDTree
