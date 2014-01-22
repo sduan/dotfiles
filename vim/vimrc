@@ -21,13 +21,15 @@ nmap ,m :MRU<CR>
 set smartindent
 set tabstop=4
 set shiftwidth=4
-" set expandtab
+set expandtab
 set number
 set cursorline
 set autoread
 set showmatch
 set laststatus=2
 set tags=tags;/
+set ignorecase
+set smartcase
 
 "===============================================================================
 " Color
